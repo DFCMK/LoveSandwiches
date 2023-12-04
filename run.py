@@ -113,11 +113,6 @@ def calculate_stock_data(data):
 
     return new_stock_data
 
-def get_stock_values(data):
-    headings = sales.row_values(1)
-    print(headings)
-
-
 def main():
     """
     Run all program functions
@@ -135,7 +130,7 @@ def main():
 
 
 print("Welcome to Love Sandwiches Data Automation")
-#main()
-get_stock_values(data)
+main()
+
 
 
