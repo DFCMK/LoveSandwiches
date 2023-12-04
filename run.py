@@ -113,6 +113,10 @@ def calculate_stock_data(data):
 
     return new_stock_data
 
+def get_stock_values(data):
+    headings = sales.row_values(1)
+    print(headings)
+
 
 def main():
     """
@@ -126,9 +130,12 @@ def main():
     sales_columns = get_last_5_entries_sales()
     stock_data = calculate_stock_data(sales_columns)
     update_worksheet(stock_data, "stock")
+    sales_columns = get_last_5_entries_sales()
+    stock_data = calculate_stock_data(sales_columns)
 
 
 print("Welcome to Love Sandwiches Data Automation")
-main()
-sales_columns = get_last_5_entries_sales()
-stock_data = calculate_stock_data(sales_columns)
+#main()
+get_stock_values(data)
+
+
